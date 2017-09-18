@@ -29,12 +29,14 @@ title="$(tr [A-Z] [a-z] <<< "$title")"
 #echo $a
 
 CODE=$title".rb"
-TESTCODE="test/"$title"_test.rb"
+#TESTCODE="test/"$title"_test.rb"
 
 #echo $CODE
 #echo $TESTCODE
 
 touch $CODE
-touch $TESTCODE
+# do not touch test script, using same file to test
+#touch $TESTCODE
 
-vim -p $CODE $TESTCODE
+#vim -p $CODE $TESTCODE
+vim $CODE
