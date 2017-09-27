@@ -39,4 +39,4 @@ touch $CODE
 #touch $TESTCODE
 
 #vim -p $CODE $TESTCODE
-vim $CODE
+#vim $CODE
